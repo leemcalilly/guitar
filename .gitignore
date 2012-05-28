@@ -13,3 +13,13 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+.rbenv-version
+db/*.sqlite3
+log/*.log*
+tmp/
+.sass-cache/
+config/database.yml
+log/*.lck
+solr/data
+*.DS_Store
