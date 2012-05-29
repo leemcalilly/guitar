@@ -25,5 +25,26 @@ body { padding-top: 60px; }
 // If you'd like to override bootstrap's own variables, you can do so here as well
 // See http://twitter.github.com/bootstrap/less.html for their names and documentation
 //
-// Example:
-// @linkColor: #ff0000;
+
+// Bootstrap Variable Overrides
+@linkColor: #be5045;
+
+// Custom Global Styles
+iframe {
+  width: 100%;
+}
+
+::selection {
+  color: @white;
+  background: #be5045;
+}
+
+::-moz-selection {
+  color: @white;
+  background: #be5045;
+}
+
+::-webkit-selection {
+  color: @white;
+  background: #be5045;
+}

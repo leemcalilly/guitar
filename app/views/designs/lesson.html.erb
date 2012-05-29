@@ -1,0 +1,37 @@
+<article id="lesson">
+  <header class="page-header">
+    <h1>
+      Intro to Fingerpicking 
+      <small>Lesson 4</small>
+    </h1>
+    <time>
+      28 minutes
+    </time>
+    <%= render "description" %>
+  </header>
+  
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#tab1" data-toggle="tab">Lesson</a></li>
+    <li><a href="#tab2" data-toggle="tab">Video</a></li>
+    <li><a href="#tab3" data-toggle="tab">Tabs</a></li>
+    <li><a href="#tab4" data-toggle="tab">Exercises</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+      <%= render "body" %>
+    </div>
+    
+    <div class="tab-pane" id="tab2">
+      <%= render "video" %>
+    </div>
+    
+    <div class="tab-pane" id="tab3">
+      <%= render "tabs" %>
+    </div>
+
+    <div class="tab-pane" id="tab4">
+      <%= render "exercises" %>
+    </div>
+  </div>
+</article>
