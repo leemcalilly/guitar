@@ -31,11 +31,34 @@
           <a class="brand" href="#">The Fuzz Guide to Guitar</a>
           <div class="container nav-collapse">
             <ul class="nav">
-              <li><%= link_to "Original Fuzz", "http://originalfuzz.com"  %></li>
-              <li><%= link_to "Overview", "#"  %></li>
-              <li><%= link_to "Lessons", "#"  %></li>
-              <li><%= link_to "Account", "#"  %></li>
-              
+              <li><%= link_to "Overview", "/overview"  %></li>
+              <li><%= link_to "Lessons", "/lessons"  %></li>
+              <li class="dropdown">
+                <a href="#"
+                   class="dropdown-toggle"
+                   data-toggle="dropdown">
+                   <i class="icon-user icon-white"></i>
+                   Lee McAlilly
+                   <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="/account">
+                      <i class="icon-cog"></i>
+                      Account
+                    </a>
+                  </li>
+                  
+                  <li class="divider"></li>
+                  
+                  <li>
+                    <a href="#">
+                      <i class="icon-off"></i>
+                      Sign out
+                    </a>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -48,7 +71,8 @@
 
       <footer>
         <hr>
-        <p>&copy; Original Fuzz 2012</p>
+        <p>&copy; <a href="http://originalfuzz.com">Original Fuzz</a> 2012</p>
+        <p>Find Excellent Guitar straps, cables, bags and other accessories at <a href="http://originalfuzz.com">Original Fuzz</a></p>
       </footer>
     </div>
     
