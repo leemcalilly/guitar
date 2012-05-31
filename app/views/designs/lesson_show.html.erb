@@ -1,4 +1,4 @@
-<article id="lesson">
+<section id="lesson">
   <header class="page-header">
     <h1>
       Intro to Fingerpicking 
@@ -7,25 +7,25 @@
     <time>
       28 minutes
     </time>
-    <%= render "description" %>
+    <%= render :partial => "description" %>
   </header>
   
-  <ul class="nav nav-tabs">
+  <ul class="nav nav-pills">
     <li class="active"><a href="#tab1" data-toggle="tab">Lesson</a></li>
     <li><a href="#tab2" data-toggle="tab">Video</a></li>
     <li><a href="#tab3" data-toggle="tab">Tabs</a></li>
     <li><a href="#tab4" data-toggle="tab">Exercises</a></li>
   </ul>
-
+  
   <div class="tab-content">
     <div class="tab-pane active" id="tab1">
       <%= render "body" %>
     </div>
-    
+
     <div class="tab-pane" id="tab2">
       <%= render "video" %>
     </div>
-    
+
     <div class="tab-pane" id="tab3">
       <%= render "tabs" %>
     </div>
@@ -34,4 +34,5 @@
       <%= render "exercises" %>
     </div>
   </div>
-</article>
+
+</section>
